@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -7,21 +8,27 @@
     font-family: 'Roboto',sans-serif;
 }
 
+body{
+  background-color: khaki;
+}
 .wrapper{
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
-  background-color: whitesmoke;
-  border: solid 1px #3A4655;
-  box-shadow: 0 8px 50px -7px black;
+  background-color: #f7f5eb;
+  border: none;
+  box-shadow: 0 4px 10px 2px rgba(0, 0, 0, 0.1),
+  0 5px 20px 5px rgba(0, 0, 0, 0.08),
+  0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .screen{
   background-color: white;
-  color: black;
+  color: rgba(0, 0, 0, 0.7);
   padding: 40px;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  text-align: right;
 }
 
 .buttons{
@@ -33,5 +40,22 @@
   padding: 30px;
   border: none;
   font-size: 20px;
-
+  transition: .3s all linear;
 }
+
+.buttons button:hover{
+  background-color: #e0e0e0;
+}
+
+.buttons button:active{
+  background-color: #bdbdbd;
+}
+
+.erase{
+  color: #f4e660;
+}
+
+.operators{
+  background-color: #f4e660;
+}
+
