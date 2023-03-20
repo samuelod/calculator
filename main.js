@@ -1,7 +1,7 @@
 function getInputValue(){
     let input = event.target.innerText;
     console.log(input)
-    printValue
+    printValue(input);
 }
 
 // we will make a function that will print the values inside our field 
