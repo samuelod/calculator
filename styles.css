@@ -60,9 +60,9 @@ body{
   background-color: #f4e660;
 }
 
-@media screen and (max-width: 600px){
-	main {
-		max-width: none;
-		max-height: none;
-	}
+@media screen and (max-width:500px){
+  .wrapper{
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: minmax(120px, auto) repeat(5,80px);
+  }  
 }
