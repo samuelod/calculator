@@ -43,14 +43,9 @@ body{
   transition: .3s all linear;
 }
 
-.operators:hover{
-  opacity: 50%;
+.buttons button:hover{
+  background-color: #e0e0e0;
 }
-
-button:hover{
- background-color: #e0e0e0; 
-}
-
 
 .buttons button:active{
   background-color: #bdbdbd;
@@ -65,3 +60,9 @@ button:hover{
   background-color: #f4e660;
 }
 
+@media screen and (max-width: 600px){
+	main {
+		max-width: none;
+		max-height: none;
+	}
+}
