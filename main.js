@@ -1,4 +1,5 @@
 // DOM ELEMENTS
+const displayEl = document.querySelector('.display');
 const acEl = document.querySelector('.ac');
 const pmEl = document.querySelector('.pm');
 const percentEl = document.querySelector('.percent');
@@ -25,6 +26,26 @@ const numberElArray = [
     number5El, number6El, number7El, number8El, number9El
 ];
 
+
+//FUNCTION 
+const handleNumberClick = (numStr) => {
+       const currentDisplayStr = displayEl.textContent;
+       if (currentDisplayStr === '0') {
+            displayEl.textContent = numStr;
+       } else{
+        displayEl.textContent = 
+        parseFloat(currentDisplayStr + numStr).toLocaleString();
+       }
+      };
+
+//ADD EVENT LISTENERS TO NUMBERS AND BUTTONS
+for (let i = 0; i < numberElArray.length; i++){
+    const numberEl = numberElArray[i];
+    numberEl.addEventListener('click', () => {
+        handleNumberClick(i.toString());
+    });
+
+}
 
 
 
